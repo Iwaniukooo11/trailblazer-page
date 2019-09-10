@@ -1,16 +1,14 @@
-$color-purple-dark:#3F3D56;
-$color-purple-light:rgb(195, 190, 223);
-$color-purple-hard:#554FAA;
-$color-black-dark:#2d3436;
-$color-black-light:#7c7c7c;
-$color-white:#fff;
+$color-sky-dark:#02203B;
+$color-sky-dark-ultra:rgb(5, 25, 42);
+// $color-sky-dark-ultra-opacity:rgba(5, 25, 42, 1);
+$color-sky-light:#134674;
+$color-light-white:#fff;
 
-@mixin makePseudoLine($width, $height, $bgCol) {
+@mixin makePseudo($a, $b) {
     content: "";
     position: absolute;
-    width: $width;
-    height: $height;
-    background-color: $bgCol;
+    width: $a;
+    height: $b;
 }
 
 @mixin makeSquare($a) {

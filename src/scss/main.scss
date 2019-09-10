@@ -1,0 +1,37 @@
+@import './variables';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'timeburner', sans-serif;
+    color: $color-light-white;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'timeburner';
+    src: url(../font/timeburnernormal.ttf);
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    min-height: 100vh;
+
+    &__head {
+        text-align: center;
+        font-size: 28px;
+    }
+}
+
+@import './home';
+@import './nav';
+@import './burger';
