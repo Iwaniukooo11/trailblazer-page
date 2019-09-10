@@ -19,6 +19,16 @@ body {
     src: url(../font/timeburnernormal.ttf);
 }
 
+@font-face {
+    font-family: 'timeburnerBold';
+    src: url(../font/timeburnerbold.ttf);
+}
+
+@font-face {
+    font-family: 'gravedigger';
+    src: url(../font/Gravedigger.otf);
+}
+
 ul {
     list-style: none;
 }
@@ -29,6 +39,14 @@ ul {
     &__head {
         text-align: center;
         font-size: 28px;
+    }
+}
+
+@media(min-width:1200px) {
+    .section {
+        &__head {
+            font-size: 36px;
+        }
     }
 }
 

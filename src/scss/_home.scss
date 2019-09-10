@@ -2,13 +2,48 @@
 
 .home {
     background: linear-gradient(180deg, $color-sky-dark 38.02%, $color-sky-light 100%), $color-sky-dark;
+    background: url(../img/home_background.jpg);
+    background-position: 80% bottom;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     letter-spacing: 2px;
+    text-align: center;
 
     &__logo {
-        font-size: 55px;
+        font-size: 30px;
+        font-family: 'gravedigger';
+
+        .min {
+            font-size: 15px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .home {
+
+        &__logo {
+            font-size: 50px;
+
+            .min {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .home {
+
+        &__logo {
+            font-size: 70px;
+
+            .min {
+                font-size: 35px;
+            }
+        }
     }
 }

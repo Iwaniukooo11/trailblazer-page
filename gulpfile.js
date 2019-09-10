@@ -18,7 +18,7 @@ const {
   wait = require('gulp-wait')
 
 sass.compiler = require('node-sass');
-const time = 20
+const time = 40
 
 function hello() {
   console.log('Hello!');
@@ -90,9 +90,9 @@ function watcher() {
 
 function clean() {
   return src('./dist', {
-      read: false,
-      allowEmpty: true
-    })
+    read: false,
+    allowEmpty: true
+  })
     .pipe(wait(10))
     .pipe(cleaner());
 }

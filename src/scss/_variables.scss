@@ -4,6 +4,8 @@ $color-sky-dark-ultra:rgb(5, 25, 42);
 $color-sky-light:#134674;
 $color-light-white:#fff;
 
+$nav-height:66px;
+
 @mixin makePseudo($a, $b) {
     content: "";
     position: absolute;
