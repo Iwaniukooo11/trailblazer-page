@@ -1,0 +1,108 @@
+.nav {
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    z-index: 10;
+    padding: 10px;
+    background-color: $color-white;
+    border-right: 4px solid $color-purple-hard;
+    font-size: 10px;
+    transition: .2s linear;
+
+    &.on {
+        left: 0;
+    }
+
+    &__list {
+        padding-top: 30px;
+        flex-grow: 1;
+
+
+        &-element {
+            margin: 25px 20px;
+            color: $color-black-dark;
+            font-weight: bold;
+            font-size: 2.5em;
+            position: relative;
+            overflow: hidden;
+            transition: .2s;
+
+            &.on {
+                color: $color-purple-light;
+            }
+
+
+            &::first-letter {
+                color: $color-purple-hard;
+            }
+
+            &::after {
+                @include makePseudoLine(5px, 100%, $color-purple-hard);
+                right: 10px;
+                top: 100%;
+                transition: .2s;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        width: 80%;
+        transform: translate(-50%, -100%);
+        bottom: 0;
+        left: 50%;
+    }
+}
+
+@media(min-width:795px) {
+    .nav {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid $color-black-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__list {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px;
+            max-width: 1000px;
+
+            &-element {
+                font-size: 2.7em;
+                flex-grow: 1;
+                text-align: center;
+
+
+                &:hover {
+                    cursor: pointer;
+
+                    &::after {
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        .header-inside {
+            display: block;
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .nav {
+        &__list {
+            &-element {
+                font-size: 3em;
+            }
+        }
+    }
+}

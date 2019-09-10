@@ -1,0 +1,14 @@
+.logo {
+    font-size: 4em;
+    padding: 10px 0;
+    display: block;
+
+    &::first-letter {
+        color: $color-purple-hard;
+    }
+
+    &__title {
+        font-family: Montserrat;
+    }
+}
+

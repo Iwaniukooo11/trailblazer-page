@@ -1,0 +1,11 @@
+{
+  "name": "project_space",
+  "version": "1.0.0",
+  "description": "- HTML5\r - CSS3\r   - Grid\r   - Flexbox\r   - BEM\r - JavaScript\r   - Highway.js\r - Gulp\r - Webpack \r - ESLint\r - Panini",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
