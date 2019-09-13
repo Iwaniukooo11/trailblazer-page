@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const nav = document.querySelector('.nav');\nconst navCloser = document.querySelector('.closer');\nconst burger = document.querySelector('.burger');\nconst lastLine = document.querySelector('.burger__line--last');\nnavCloser.addEventListener('click', () => {\n  navCloser.classList.remove('on');\n  nav.classList.remove('on');\n  lastLine.classList.remove('on');\n});\nburger.addEventListener('click', () => {\n  nav.classList.toggle('on');\n  lastLine.classList.toggle('on');\n  navCloser.classList.toggle('on');\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("// import lightGallery from 'lightGallery'\n// lightGallery(document.getElementById('lightGallery'))\nconst nav = document.querySelector('.nav');\nconst navCloser = document.querySelector('.closer');\nconst burger = document.querySelector('.burger');\nconst lastLine = document.querySelector('.burger__line--last');\nnavCloser.addEventListener('click', () => {\n  navCloser.classList.remove('on');\n  nav.classList.remove('on');\n  lastLine.classList.remove('on');\n});\nburger.addEventListener('click', () => {\n  nav.classList.toggle('on');\n  lastLine.classList.toggle('on');\n  navCloser.classList.toggle('on');\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ })
 
