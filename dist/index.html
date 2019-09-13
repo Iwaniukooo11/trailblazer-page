@@ -38,6 +38,8 @@
     </nav>
     <div class="closer"></div>
 
+
+
     <div class="burger">
         <div class="burger__line"></div>
         <div class="burger__line"></div>
@@ -50,7 +52,7 @@
             <br />
             <span>Trailblazer</span>
         </h1>
-        <!-- <img src="assets/img/logov2.png" alt=""> -->
+
         <h2 class="section__head section__head--home">Deep zdanie <br />
             Litwo ojczyzno moja itd</h2>
 
@@ -67,7 +69,7 @@
     <section class="section project" id='scroll-project'>
         <h2 class="section__head">Projekt</h2>
         <div class="project__gallery" id='lightgallery'>
-            <a class="project__link" href="https://picsum.photos/300/300">
+            <a class="project__link" href="assets/img/rocket.png">
                 <img class="project__img" src="https://picsum.photos/300/300" />
             </a>
             <a class="project__link" href="https://picsum.photos/300/300">
@@ -77,6 +79,7 @@
                 <img class="project__img" src="https://picsum.photos/300/300" />
             </a>
         </div>
+        <img class="rocket" src="assets/img/rocket.png" alt="">
     </section>
 
     <section class="section wideo" id='scroll-wideo'>
@@ -142,7 +145,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
 
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lightgallery").lightGallery();
+        });
+    </script>
 
 </body>
 

@@ -43,9 +43,11 @@ img {
 }
 
 .section {
+    overflow: hidden;
     display: grid;
     align-items: center;
     justify-items: center;
+    position: relative;
     row-gap: 10px;
     padding: 20px 20px 60px;
     border-bottom: 2px solid $color-white-dark;
@@ -57,10 +59,6 @@ img {
         font-size: 40px;
         color: $color-sky-dark;
         padding-bottom: 15px;
-
-        // color: $color-sky-light;
-        // font-family: 'Open Sans';
-        // text-transform: uppercase;
 
         &--home {
             color: $color-white-light;
@@ -74,8 +72,16 @@ img {
     height: 2px;
     margin: 10px 0;
     justify-self: flex-start;
-    // background-color: $color-white-dark;
     background-color: $color-sky-light;
+}
+
+.rocket {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: -30vh;
+    width: 60vw;
+    transform: translateX(25%);
 }
 
 @media(min-width:640px) {
