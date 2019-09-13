@@ -1,3 +1,7 @@
+// import lightGallery from 'lightGallery'
+
+// lightGallery(document.getElementById('lightGallery'))
+
 const nav = document.querySelector('.nav')
 const navCloser = document.querySelector('.closer')
 

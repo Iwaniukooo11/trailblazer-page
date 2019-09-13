@@ -1,0 +1,19 @@
+.project {
+    &__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    &__link {
+        min-width: 200px;
+        width: 29%;
+        margin: 10px 20px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
