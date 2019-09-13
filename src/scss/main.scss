@@ -9,8 +9,8 @@
 }
 
 body {
-    font-family: 'timeburner', sans-serif;
-    color: $color-light-white;
+    font-family: 'Open Sans', arial, sans-serif;
+    color: $color-white-dark;
     font-size: 20px;
 }
 
@@ -34,18 +34,77 @@ ul {
 }
 
 .section {
-    min-height: 100vh;
+
+    padding: 20px 20px 60px;
+    border-bottom: 2px solid $color-white-dark;
 
     &__head {
+        font-family: 'timeburner', roboto, arial;
         text-align: center;
-        font-size: 28px;
+        font-size: 40px;
+        color: $color-sky-dark;
+        padding-bottom: 15px;
+
+        &--home {
+            color: $color-white-light;
+            font-size: 28px;
+        }
     }
 }
+
+.line {
+    width: 80%;
+    height: 1px;
+    margin: 15px 0;
+    background-color: $color-white-dark;
+}
+
+@media(min-width:640px) {
+    .section {
+        &__head {
+            font-size: 44px;
+
+            &--home {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .section {
+        &__head {
+            font-size: 48px;
+
+            &--home {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .section {
+        &__head {
+            font-size: 50px;
+
+            &--home {
+                font-size: 33px;
+            }
+        }
+    }
+}
+
 
 @media(min-width:1200px) {
     .section {
         &__head {
-            font-size: 36px;
+            font-size: 52px;
+
+            &--home {
+                font-size: 34px;
+            }
+
         }
     }
 }
@@ -53,3 +112,4 @@ ul {
 @import './home';
 @import './nav';
 @import './burger';
+@import './wideo'

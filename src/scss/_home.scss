@@ -1,6 +1,7 @@
 @import './variables';
 
 .home {
+    min-height: 100vh;
     background: linear-gradient(180deg, $color-sky-dark 38.02%, $color-sky-light 100%), $color-sky-dark;
     background: url(../img/home_background.jpg);
     background-position: 80% bottom;
@@ -15,6 +16,7 @@
     &__logo {
         font-size: 30px;
         font-family: 'gravedigger';
+        color: $color-white-light;
 
         .min {
             font-size: 15px;

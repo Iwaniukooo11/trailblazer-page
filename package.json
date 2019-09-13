@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "One side coffe-side project",
   "main": "index.js",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "dependencies": {
     "browser-sync": "^2.26.5",
     "gulp-autoprefixer": "^6.1.0",

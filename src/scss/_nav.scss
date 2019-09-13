@@ -2,6 +2,7 @@
 
 .nav {
     background-color: $color-sky-dark-ultra;
+    color: $color-white-light;
     position: fixed;
     z-index: 50;
     min-width: 50%;
@@ -62,13 +63,12 @@
     .nav {
         transform: translateX(0);
         height: $nav-height;
-        // line-height: 66px;
         padding: 0;
         position: fixed;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // width: 100%;
+        font-family: 'timeburner', roboto, arial;
 
         &__list {
             flex-direction: row;
@@ -109,7 +109,7 @@
 
                 &::after {
                     @include makePseudo(3px, $nav-height);
-                    background-color: $color-light-white;
+                    background-color: $color-white-light;
                     transform: translateY(-50%);
                     right: -20px;
                     top: 50%;
