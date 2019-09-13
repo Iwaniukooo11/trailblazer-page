@@ -7,6 +7,8 @@ const navLinks = document.querySelectorAll('.nav__link')
 const navCloser = document.querySelector('.closer')
 const rocket = document.querySelector('.rocket')
 
+// const projectSection = document.querySelector('.section.project')
+
 const time = 800
 
 const burger = document.querySelector('.burger')
@@ -33,7 +35,7 @@ burger.addEventListener('click', () => {
     navCloser.classList.toggle('on')
 })
 
-window.addEventListener('scroll', () => rocket.style.transform = `translateX(25%) translateY(-${window.pageYOffset / 4}px)`)
+window.addEventListener('scroll', () => rocket.style.transform = `translateX(25%) translateY(-${window.pageYOffset/2}px)`)
 
 import VanillaScrollspy from 'vanillajs-scrollspy';
 

@@ -79,9 +79,15 @@ img {
     position: absolute;
     z-index: -1;
     right: 0;
-    bottom: -30vh;
-    width: 60vw;
+    bottom: -50vh;
+    // width: 60vw;
+    height: 30vh;
     transform: translateX(25%);
+}
+
+.mechanic {
+    width: 30%;
+    padding-top: 20px;
 }
 
 @media(min-width:640px) {
