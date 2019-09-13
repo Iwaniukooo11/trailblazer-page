@@ -3,10 +3,22 @@
 // lightGallery(document.getElementById('lightGallery'))
 
 const nav = document.querySelector('.nav')
+const navLinks = document.querySelectorAll('.nav__link')
 const navCloser = document.querySelector('.closer')
+
+const time = 800
 
 const burger = document.querySelector('.burger')
 const lastLine = document.querySelector('.burger__line--last')
+
+navLinks.forEach(e => e.addEventListener('click', () => {
+    setTimeout(() => {
+        nav.classList.remove('on')
+        navCloser.classList.remove('on')
+        lastLine.classList.remove('on')
+    }, time - 10)
+
+}))
 
 navCloser.addEventListener('click', () => {
     navCloser.classList.remove('on')
@@ -19,3 +31,9 @@ burger.addEventListener('click', () => {
     lastLine.classList.toggle('on')
     navCloser.classList.toggle('on')
 })
+
+import VanillaScrollspy from 'vanillajs-scrollspy';
+
+const navbar = document.querySelector('.nav');
+const scrollspy = new VanillaScrollspy(navbar, time);
+scrollspy.init();

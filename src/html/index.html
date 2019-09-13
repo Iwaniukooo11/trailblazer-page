@@ -13,15 +13,27 @@
     <title>Projekt kosmos</title>
 </head>
 
-<body>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list-element nav__list-element--first">Home</li>
-            <li class="nav__list-element">O nas</li>
-            <li class="nav__list-element">projekt</li>
-            <li class="nav__list-element">wideo</li>
-            <li class="nav__list-element">status</li>
-            <li class="nav__list-element">kontakt</li>
+<body class="main-content">
+    <nav class="nav ">
+        <ul class="nav__list ">
+            <li class="nav__list-element nav__list-element--first ">
+                <a class='nav__link' href="#scroll-home"> Home </a>
+            </li>
+            <li class="nav__list-element">
+                <a class='nav__link' href="#scroll-about"> O nas </a>
+            </li>
+            <li class="nav__list-element">
+                <a class='nav__link' href="#scroll-project"> projekt </a>
+            </li>
+            <li class="nav__list-element">
+                <a class='nav__link' href="#scroll-wideo"> Wideo </a>
+            </li>
+            <li class="nav__list-element">
+                <a class='nav__link' href="#scroll-status"> Status </a>
+            </li>
+            <li class="nav__list-element">
+                <a class='nav__link' href="#scroll-help"> Wsparcie </a>
+            </li>
         </ul>
     </nav>
     <div class="closer"></div>
@@ -32,7 +44,7 @@
         <div class="burger__line burger__line--last"></div>
     </div>
 
-    <section class="section home">
+    <section class="section home" id='scroll-home'>
         <h1 class="home__logo">
             <span class="min">projekt</span>
             <br />
@@ -44,7 +56,7 @@
 
     </section>
 
-    <section class="section about">
+    <section class="section about" id='scroll-about'>
         <h2 class="section__head">O nas</h2>
         <p class="section__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem eos neque commodi
             nihil sunt similique dicta hic ipsa aperiam quia, amet.!</p>
@@ -52,7 +64,7 @@
         <p class="section__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
 
-    <section class="section project">
+    <section class="section project" id='scroll-project'>
         <h2 class="section__head">Projekt</h2>
         <div class="project__gallery" id='lightgallery'>
             <a class="project__link" href="https://picsum.photos/300/300">
@@ -67,7 +79,7 @@
         </div>
     </section>
 
-    <section class="section wideo">
+    <section class="section wideo" id='scroll-wideo'>
         <h2 class="section__head">Wideo</h2>
         <div class="wideo__wrap">
             <iframe class="wideo__movie wideo__movie--first" src="https://www.youtube.com/embed/vl6jn-DdafM"
@@ -84,12 +96,12 @@
 
     </section>
 
-    <section class="section status">
+    <section class="section status" id='scroll-status'>
         <h2 class="section__head">Status</h2>
         <p class="section__desc">Do lotu zostało X</p>
     </section>
 
-    <section class="section help">
+    <section class="section help" id='scroll-help'>
         <h2 class="section__head">Wesprzyj nas!</h2>
         <p class="section__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, eum facilis debitis
             recusandae porro nesciunt, fuga voluptatem fugit.</p>
@@ -130,11 +142,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#lightgallery").lightGallery();
-        });
-    </script>
+
 
 </body>
 
