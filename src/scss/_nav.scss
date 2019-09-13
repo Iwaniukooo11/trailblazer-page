@@ -4,12 +4,13 @@
     background-color: $color-sky-dark-ultra;
     color: $color-white-light;
     position: fixed;
-    z-index: 50;
+    z-index: 150;
     min-width: 50%;
     height: 100%;
     padding: 100px 20px 0 10px;
     transform: translateX(-100%);
     transition: .3s;
+    font-family: 'timeburner', ubuntu, arial;
 
     &.on {
         transform: translateX(0);
@@ -51,6 +52,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
     transform: translateX(-100%);
 
