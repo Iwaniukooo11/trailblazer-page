@@ -8,22 +8,33 @@
     background: url(../img/home_background.jpg);
     background-position: 80% bottom;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    display: grid;
+    row-gap: 60px;
+    // align-items: center;
+    justify-items: center;
     letter-spacing: 2px;
     text-align: center;
     border: none;
 
     &__logo {
-        font-size: 30px;
-        font-family: 'gravedigger';
-        color: $color-white-light;
+        // font-size: 30px;
+        // font-family: 'gravedigger';
+        // color: $color-white-light;
 
-        .min {
-            font-size: 15px;
-        }
+        // .min {
+        //     font-size: 15px;
+        // }
+        width: 90%;
+        max-width: 800px;
+        align-self: flex-end;
+    }
+
+    &__head {
+        align-self: flex-start;
     }
 }
 
@@ -31,7 +42,8 @@
     .home {
 
         &__logo {
-            font-size: 50px;
+            // font-size: 50px;
+            width: 80%;
 
             .min {
                 font-size: 25px;
