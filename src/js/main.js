@@ -1,16 +1,8 @@
-// import lightGallery from 'lightGallery'
-
-// lightGallery(document.getElementById('lightGallery'))
-
 const nav = document.querySelector('.nav')
 const navLinks = document.querySelectorAll('.nav__link')
 const navCloser = document.querySelector('.closer')
 const rocket = document.querySelector('.rocket')
-
-// const projectSection = document.querySelector('.section.project')
-
 const time = 800
-
 const burger = document.querySelector('.burger')
 const lastLine = document.querySelector('.burger__line--last')
 const allLines = document.querySelectorAll('.burger__line')
@@ -53,4 +45,13 @@ scrollspy.init();
 const sections = document.querySelectorAll('.section')
 sections.forEach((element, index) => index === 0 ? null : element.setAttribute('data-aos', 'fade-in'))
 
-// AOS.init()
+const projectGallery = document.querySelector('.project__gallery')
+for (let i = 1; i < 7; i++) {
+    const link = document.createElement('a')
+    link.classList.add('project__link')
+    link.setAttribute('href', `assets/rocket_photos/${i}_max.jpg`)
+    link.innerHTML = `
+    <img class="project__img" src="assets/rocket_photos/${i}_min.jpg" />
+`
+    projectGallery.appendChild(link)
+}
