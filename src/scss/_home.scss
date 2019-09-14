@@ -1,6 +1,8 @@
 @import './variables';
 
 .home {
+    max-width: none;
+
     min-height: 100vh;
     background: linear-gradient(180deg, $color-sky-dark 38.02%, $color-sky-light 100%), $color-sky-dark;
     background: url(../img/home_background.jpg);

@@ -48,3 +48,33 @@
         }
     }
 }
+
+@media(min-width:768px) {
+    .help {
+        &__social {
+            &-icon {
+                font-size: 60px;
+                ;
+            }
+
+            &-list {
+                width: 370px;
+            }
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .help {
+        &__social {
+            &-icon {
+                font-size: 70px;
+                ;
+            }
+
+            &-list {
+                width: 400px;
+            }
+        }
+    }
+}

@@ -2,3 +2,9 @@
     // padding-bottom: 40vh;
     padding-bottom: 20px;
 }
+
+@media(min-width:768px) {
+    .status {
+        row-gap: 0;
+    }
+}

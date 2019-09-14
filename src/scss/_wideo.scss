@@ -5,23 +5,50 @@
         display: grid;
         row-gap: 40px;
         align-items: center;
-        // align-content: center;
         justify-items: center;
 
     }
 
     &__movie {
         position: relative;
-        // box-shadow: 0px 0px 0px 2px $color-white-dark;
         background-color: $color-white-medium;
+        z-index: 100;
+    }
+}
 
-        // &::before {
-        //     @include makePseudo(100%, 100%);
-        //     background-color: $color-white-medium;
-        //     top: 0;
-        //     left: 0;
+@media(min-width:768px) {
+    .wideo {
+        &__wrap {
+            grid-template-columns: auto auto;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
 
-        //     z-index: 100;
-        // }
+        &__movie {
+            &--first {
+                grid-column: 1/ span 1
+            }
+
+            &--second {
+                grid-column: 1/ span 1
+            }
+        }
+
+        &__desc {
+            // padding: 0 15px;
+            grid-row: 1 / -1;
+            grid-column: 2 / span 1;
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .wideo {
+        &__movie {
+            width: 370px;
+            height: 185px;
+        }
     }
 }

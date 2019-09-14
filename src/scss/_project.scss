@@ -4,16 +4,24 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        max-width: 1000px;
+        // max-width: 1000px;
     }
 
     &__link {
         min-width: 200px;
-        width: 29%;
+        width: 31%;
         margin: 10px 20px;
     }
 
     &__img {
         width: 100%;
+    }
+}
+
+@media(min-width:960px) {
+    .project {
+        &__link {
+            margin: 20px 30px;
+        }
     }
 }
