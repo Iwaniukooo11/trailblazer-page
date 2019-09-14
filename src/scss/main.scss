@@ -43,6 +43,16 @@ img {
     max-width: 100%;
 }
 
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+
+
 .section {
     max-width: 480px;
     margin: 0 auto;

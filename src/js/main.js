@@ -36,9 +36,10 @@ burger.addEventListener('click', () => {
 window.addEventListener('scroll', () => rocket.style.transform = `translateX(41%) translateY(-${window.pageYOffset / 4}%)`)
 
 import VanillaScrollspy from 'vanillajs-scrollspy';
-import { all } from 'q'
+// import { all } from 'q'
 
 const navbar = document.querySelector('.nav');
+
 const scrollspy = new VanillaScrollspy(navbar, time);
 scrollspy.init();
 
