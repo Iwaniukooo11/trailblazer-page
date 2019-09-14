@@ -7,19 +7,12 @@
             display: inline-flex;
             text-align: left;
             flex-direction: column;
-            // font-family: 'timeburnerbold';
+            letter-spacing: 1px;
         }
 
         &element {
             display: flex;
             align-items: center;
-
-            // &::before {
-            //     content: '-';
-            //     margin-right: 2px;
-            //     color: $color-sky-light;
-            //     font-size: 1.2em;
-            // }
         }
 
         &icon {
@@ -50,9 +43,8 @@
             &.yt {
                 color: #c4302b;
             }
-            &.mail{
-                
-            }
+
+            &.mail {}
         }
     }
 }
