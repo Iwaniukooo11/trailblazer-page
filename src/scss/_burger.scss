@@ -7,7 +7,7 @@
     position: fixed;
     left: 20px;
     top: 30px;
-    z-index: 100;
+    z-index: 200;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,12 +20,20 @@
         background-color: $color-white-medium;
         border-radius: 5px;
 
+        &.outMain {
+            background-color: $color-sky-light;
+        }
+
         &--last {
             transition: .3s;
 
             &.on {
                 transform: translateX(10px);
                 background-color: $color-sky-light;
+
+                &.outMain {
+                    background-color: $color-white-light;
+                }
             }
         }
     }

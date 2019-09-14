@@ -13,6 +13,12 @@ const time = 800
 
 const burger = document.querySelector('.burger')
 const lastLine = document.querySelector('.burger__line--last')
+const allLines = document.querySelectorAll('.burger__line')
+
+allLines.forEach(element => window.addEventListener('scroll', () =>
+    element.getBoundingClientRect().top + window.pageYOffset >= window.outerHeight
+        ? element.classList.add('outMain')
+        : element.classList.remove('outMain')))
 
 navLinks.forEach(e => e.addEventListener('click', () => {
     setTimeout(() => {
@@ -35,9 +41,10 @@ burger.addEventListener('click', () => {
     navCloser.classList.toggle('on')
 })
 
-window.addEventListener('scroll', () => rocket.style.transform = `translateX(25%) translateY(-${window.pageYOffset / 2}px)`)
+window.addEventListener('scroll', () => rocket.style.transform = `translateX(41%) translateY(-${window.pageYOffset / 2}px)`)
 
 import VanillaScrollspy from 'vanillajs-scrollspy';
+import { all } from 'q'
 
 const navbar = document.querySelector('.nav');
 const scrollspy = new VanillaScrollspy(navbar, time);

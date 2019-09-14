@@ -36,6 +36,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 img {
@@ -65,6 +66,7 @@ img {
         &--home {
             color: $color-white-light;
             font-size: 28px;
+            text-transform: none;
         }
     }
 
