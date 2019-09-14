@@ -35,10 +35,15 @@ burger.addEventListener('click', () => {
     navCloser.classList.toggle('on')
 })
 
-window.addEventListener('scroll', () => rocket.style.transform = `translateX(25%) translateY(-${window.pageYOffset/2}px)`)
+window.addEventListener('scroll', () => rocket.style.transform = `translateX(25%) translateY(-${window.pageYOffset / 2}px)`)
 
 import VanillaScrollspy from 'vanillajs-scrollspy';
 
 const navbar = document.querySelector('.nav');
 const scrollspy = new VanillaScrollspy(navbar, time);
 scrollspy.init();
+
+const sections = document.querySelectorAll('.section')
+sections.forEach((element, index) => index === 0 ? null : element.setAttribute('data-aos', 'fade-in'))
+
+// AOS.init()

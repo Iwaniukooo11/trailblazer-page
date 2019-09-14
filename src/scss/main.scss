@@ -55,6 +55,8 @@ img {
 
     &__head {
         font-family: 'timeburner', roboto, arial;
+        text-transform: uppercase;
+
         text-align: center;
         font-size: 40px;
         color: $color-sky-dark;
@@ -85,7 +87,7 @@ img {
     position: absolute;
     z-index: -1;
     right: 0;
-    bottom: -50vh;
+    bottom: -80vh;
     // width: 60vw;
     height: 30vh;
     transform: translateX(25%);
