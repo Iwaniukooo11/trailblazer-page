@@ -48,10 +48,9 @@ canvas {
     vertical-align: bottom;
 }
 
-
-/* ---- particles.js container ---- */
-
-
+.blue {
+    color: $color-sky-light;
+}
 
 .section {
     max-width: 480px;
@@ -150,6 +149,7 @@ canvas {
     .section {
         max-width: 700px;
         row-gap: 25px;
+        padding-top: $nav-height;
 
         padding-bottom: 10vh;
         ;
