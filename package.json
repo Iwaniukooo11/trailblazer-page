@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "description": "One side coffe-side project",
   "main": "index.js",
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
+  
   "dependencies": {
     "browser-sync": "^2.26.5",
     "gulp-autoprefixer": "^6.1.0",
@@ -24,6 +19,12 @@
     "unirest": "^0.6.0",
     "vanillajs-scrollspy": "^2.0.3"
   },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
@@ -40,14 +41,9 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Iwaniukooo11/projectcoffee.git"
-  },
+  
   "author": "Iwaniukooo11",
-  "license": "GPL-2.0-only",
-  "bugs": {
-    "url": "https://github.com/Iwaniukooo11/projectcoffee/issues"
-  },
-  "homepage": "https://github.com/Iwaniukooo11/projectcoffee"
+  "license": "GPL-2.0-only"
+  
+  
 }
