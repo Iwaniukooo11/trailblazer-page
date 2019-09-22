@@ -9,7 +9,16 @@
             flex-direction: column;
             letter-spacing: 1px;
         }
-
+        &ez{
+            display:flex;
+            margin-right:20px;
+                float:left;
+        }
+         &ez1{
+            overflow:hidden;
+             margin-left:20px;
+             
+        }
         &element {
             display: flex;
             align-items: center;
@@ -20,8 +29,9 @@
             font-size: 0.65em;
             margin-right: 12px;
         }
+        
     }
-
+    
     &__social- {
         &list {
             display: flex;
