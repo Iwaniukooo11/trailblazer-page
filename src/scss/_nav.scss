@@ -89,17 +89,20 @@
         &__list {
             flex-direction: row;
             justify-content: center;
+            align-items: center;
         }
 
         &__list-element {
             background-color: transparent;
             margin: 6px 8px;
+            min-width: 70px;
             height: 100%;
             position: relative;
             border-radius: 0;
             padding: 5px;
-            margin: 0 18px;
+            margin: 0 12px;
             overflow: hidden;
+            text-align: center;
 
 
             &:hover::before {
