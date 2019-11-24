@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "One side coffe-side project",
   "main": "index.js",
-  
   "dependencies": {
     "browser-sync": "^2.26.5",
     "gulp-autoprefixer": "^6.1.0",
@@ -41,9 +40,6 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "author": "Iwaniukooo11",
   "license": "GPL-2.0-only"
-  
-  
 }
