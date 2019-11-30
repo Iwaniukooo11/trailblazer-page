@@ -40,13 +40,11 @@
             padding-top: 30px;
         }
 
-        &element {}
 
         &icon {
             font-size: 50px;
             transition: .3s;
 
-            // margin: 5px 15px;
             &.fb {
                 color: #3C5A99;
             }
@@ -55,7 +53,6 @@
                 color: #c4302b;
             }
 
-            &.mail {}
 
             &:hover {
                 cursor: pointer;
