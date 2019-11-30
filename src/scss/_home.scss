@@ -59,6 +59,22 @@
     &__head {
         align-self: flex-start;
     }
+    &__deepsense,&__vilo{
+        margin:10px 20px;
+    }
+    &__deepsense{
+        width:230px;
+    }
+    &__vilo{
+        width:180px;
+    }
+    &__sponsor-wrap{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top:-20px;
+    }
 }
 
 @media(min-width:640px) and (orientation:portrait) {
