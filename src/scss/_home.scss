@@ -69,6 +69,11 @@
         width: 230px;
     }
 
+    &__deepsense-support {
+        color: $color-white-light;
+        padding: 3px 0;
+    }
+
     &__vilo {
         width: 180px;
     }
@@ -79,6 +84,16 @@
         align-items: center;
         flex-wrap: wrap;
         margin-top: -20px;
+    }
+
+    &__sponsor-element {
+        padding-bottom: 20px;
+    }
+
+    &__support-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
