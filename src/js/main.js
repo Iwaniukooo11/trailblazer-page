@@ -6,7 +6,7 @@ const time = 800;
 const burger = document.querySelector(".burger");
 const lastLine = document.querySelector(".burger__line--last");
 const allLines = document.querySelectorAll(".burger__line");
-// const VanillaScrollspy = require("vanillajs-scrollspy");
+
 import VanillaScrollspy from "vanillajs-scrollspy";
 
 const homePage = document.querySelector(".section.home");
