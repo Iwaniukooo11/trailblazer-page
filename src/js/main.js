@@ -63,9 +63,9 @@ sections.forEach((element, index) =>
 for (let i = 1; i < 7; i++) {
   const link = document.createElement("a");
   link.classList.add("project__link");
-  link.setAttribute("href", `assets/rocket_photos/${i}_max.jpg`);
+  link.setAttribute("href", `assets/rocket_final/${i}_max.jpg`);
   link.innerHTML = `
-    <img class="project__img" src="assets/rocket_photos/${i}_min.jpg" />
+    <img class="project__img" src="assets/rocket_final/${i}_min.jpg" />
 `;
   projectGallery.appendChild(link);
 }
