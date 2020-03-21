@@ -4,9 +4,6 @@
 
 - HTML5
 - CSS3
-  - Grid
-  - Flexbox
-  - BEM
 - JavaScript
   - lightgallery.js
   - particles.js
