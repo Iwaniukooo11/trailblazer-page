@@ -27,7 +27,32 @@
 </head>
 
 <body class="main-content">
-    <nav class="nav ">
+    <section class="section home" id='scroll-home'>
+        <div id="particles-js"></div>
+        <h1 class="home__logo">
+            <span class="min">project</span>
+            <span class="big">Trailblazer</span>
+            <img class="img" src="assets/img/astronaut.svg" alt="Ikonka astronauty">
+        </h1>
+    
+        <h2 class="home__head section__head section__head--home">
+            <q>To mały krok dla człowieka, </br>
+                ale wielki lot dla puszki</q>
+        </h2>
+        <ul class="home__sponsor-wrap">
+            <li class="home__sponsor-element home__sponsor-element--deepsense">
+                <a class="home__support-link" href="https://deepsense.ai/" target='_blank'>
+                    <img class="home__deepsense" src="assets/img/deepsense_white.png" alt="logo deepsense.ai">
+                    <span class="home__deepsense-support">Wsparcie</span>
+                </a>
+            </li>
+            <li class="home__sponsor-element">
+                <a class="home__support-link" href="http://vilo.bydgoszcz.pl/" target='_blank'>
+                    <img class='home__vilo' src="assets/img/vilo_logo.png" alt="logo vilo">
+                </a>
+            </li>
+        </ul>
+    </section><nav class="nav ">
         <ul class="nav__list ">
             <li class="nav__list-element nav__list-element--first ">
                 <a class='nav__link' href="#scroll-home"> Home </a>
@@ -50,43 +75,14 @@
         </ul>
         <img class="nav__img" src="assets/img/astronaut.svg" alt="Ikonka astronauty">
     </nav>
-
+    
     <div class="closer"></div>
-
+    
     <div class="burger">
         <div class="burger__line"></div>
         <div class="burger__line"></div>
         <div class="burger__line burger__line--last"></div>
-    </div>
-
-    <section class="section home" id='scroll-home'>
-        <div id="particles-js"></div>
-        <h1 class="home__logo">
-            <span class="min">project</span>
-            <span class="big">Trailblazer</span>
-            <img class="img" src="assets/img/astronaut.svg" alt="Ikonka astronauty">
-        </h1>
-
-        <h2 class="home__head section__head section__head--home">
-            <q>To mały krok dla człowieka, </br>
-                ale wielki lot dla puszki</q>
-        </h2>
-        <ul class="home__sponsor-wrap">
-            <li class="home__sponsor-element home__sponsor-element--deepsense">
-                <a class="home__support-link" href="https://deepsense.ai/" target='_blank'>
-                    <img class="home__deepsense" src="assets/img/deepsense_white.png" alt="logo deepsense.ai">
-                    <span class="home__deepsense-support">Wsparcie</span>
-                </a>
-            </li>
-            <li class="home__sponsor-element">
-                <a class="home__support-link" href="http://vilo.bydgoszcz.pl/" target='_blank'>
-                    <img class='home__vilo' src="assets/img/vilo_logo.png" alt="logo vilo">
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="section about" id='scroll-about'>
+    </div><section class="section about" id='scroll-about'>
         <h2 class="section__head">O nas</h2>
         <p class="section__desc">Jesteśmy <strong class="blue"> grupą </strong> młodych, aspirujących entuzjastów
             inżynierii i programowania. Nasza
@@ -94,7 +90,7 @@
             informatyki, fizyki
             i astronomii w roku szkolnym 2018/19.</p>
         <div class="line"></div>
-
+    
         <p class="section__desc section__desc--blue">W ramach konkursu CanSat konstruujemy naszą pierwszą minisatelitę.
         </p>
         <ul class="about__list">
@@ -104,7 +100,7 @@
                     Mamy motywację. <br />
                     W ciągłym ruchu trzyma nas
                     <strong class="blue"> Kreatywność</strong>, Rzeczowość <br>i Sumienność.
-
+    
                 </p>
             </li>
             <li class="about__list-element">
@@ -115,30 +111,25 @@
                     2019.</p>
             </li>
         </ul>
-    </section>
-
-    <section class="section project" id='scroll-project'>
+    </section><section class="section project" id='scroll-project'>
         <h2 class="section__head">Projekt</h2>
         <p class="section__desc"> CanSat to <strong class="blue"> ministatelita </strong>o wielkości nie większej niż
             puszka po napoju. Nasz projekt
             będzie wykorzystywał skrzydła!</p>
         <div class="project__gallery" id='lightgallery'>
         </div>
-
+    
         <img class="rocket" class="mechanic" src="assets/img/rocket.png" alt="Rakieta">
-    </section>
-
-    <section class="section wideo" id='scroll-wideo'>
+    </section><section class="section wideo" id='scroll-wideo'>
         <h2 class="section__head">Wideo</h2>
         <div class="wideo__wrap">
-            <iframe class="wideo__movie wideo__movie--first" src="https://www.youtube.com/embed/he6tPq1so9I"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <iframe class="wideo__movie wideo__movie--first" src="https://www.youtube.com/embed/he6tPq1so9I" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe class="wideo__movie wideo__movie--second" src="https://www.youtube.com/embed/1HT3TlDLaqs"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/1HT3TlDLaqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
+    
             <p class="section__desc wideo__desc">
                 Zadaniem naszej sondy będzie zbadanie <b class="blue"> czynników </b> takich jak temperatura i
                 ciśnienie występujących na <b class="blue"> danej </b> planecie. Podczas swobodnego spadku
@@ -148,18 +139,14 @@
             </p>
             <img class="mechanic" src="assets/img/mechanic.png" alt="Ikonka Koła Zębatego">
         </div>
-    </section>
-
-    <section class="section status" id='scroll-status'>
+    </section><section class="section status" id='scroll-status'>
         <h2 class="section__head">Status</h2>
         <p class="section__desc status__desc">Jesteśmy w grupie 10 drużyn z całej Polski zakwalifikowanych finału</p>
         <p class="section__desc status__desc">W czasie trwania naszej misji, w tej sekcji znajdzie się link do Mapy 3D z
             wykresami i
             zebranymi danymi</p>
         <img class="code" src="assets/img/code.png" alt="Ikonka Kodu">
-    </section>
-
-    <section class="section help" id='scroll-help'>
+    </section><section class="section help" id='scroll-help'>
         <h2 class="section__head">Wesprzyj nas!</h2>
         <p class="section__desc">Każda kwota oraz każde <strong class="blue"> polubienie </strong>lub subskrybcja <br>w
             mediach społecznościowych dodają
@@ -170,7 +157,7 @@
             <div class="line"></div>
             <p class="section__desc"> Czekają na nas takie wydatki jak:</p>
         </p>
-
+    
         <ul class='help__aim-list'>
             <li class="help__aim-element">
                 <i class="help__aim-icon fas fa-dot-circle"></i>
@@ -196,12 +183,12 @@
             <li class="help__aim-element">
                 <i class="help__aim-icon fas fa-dot-circle"></i>
                 Baterie</li>
-
+    
             <li class="help__aim-element">
                 <i class="help__aim-icon fas fa-dot-circle"></i>
                 Akcelerometr </li>
         </ul>
-
+    
         <ul class="help__social-list">
             <li class="help__social-element">
                 <a class="help__link" target="_blank"
@@ -209,25 +196,24 @@
                     <i class="help__social-icon fb fab fa-facebook-square"></i>
                 </a>
             </li>
-
+    
             <li class="help__social-element">
                 <a href="https://www.youtube.com/channel/UCsfFWmAgQwkoo76CMISX5rw" target="_blank" class="help__link">
                     <i class="help__social-icon yt fab fa-youtube"></i>
                 </a>
             </li>
-
+    
             <li class="help__social-element">
                 <a class="help__link" target="_blank" href="mailto:trailblazer.kontakt@gmail.com">
                     <i class="help__social-icon mail fas fa-envelope"></i>
                 </a>
             </li>
         </ul>
-
+    
         <p class="section__desc">Zapraszamy do kontaktu na <strong class="blue">
                 trailblazer.kontakt@gmail.com</strong>
         </p>
     </section>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script
