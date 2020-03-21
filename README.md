@@ -3,7 +3,7 @@
 ## Used technologies
 
 - HTML5
-- CSS3
+- SCSS
 - JavaScript
   - lightgallery.js
   - particles.js
